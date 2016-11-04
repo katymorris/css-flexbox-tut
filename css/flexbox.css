@@ -3,33 +3,37 @@
 ==================================== */
 
 @media (min-width: 769px) {
-	  .main-header, .main-nav, .row {
-	  display: flex;	
-	}
-	  .main-header {
-	  flex-direction: column;
-	  align-items: center;
-	}
-	.col {
-		flex: 1 50%;
-	}
+
+	.main-header,
+	.main-nav,
 	.row {
-		flex-wrap: wrap;
+		display: flex;
 	}
-	.secondary {
-		order: -1;
-	}
-}
-@media (min-width: 1025px) {
+
 	.main-header {
-	  flex-direction: row;
-	  justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
 	}
+
 	.col {
-		flex-basis: 0;
+		flex: 1;
+	
+		display: flex;
+		flex-direction: column;
 	}
-	.primary {
-		flex-grow: 1.4;
+
+	.button {
+		margin-top: auto;
+		align-self: flex-start; /* flex-end */
 	}
-  
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 }
